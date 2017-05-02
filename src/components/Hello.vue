@@ -2,17 +2,23 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-  
+    <h3>{{ message }}</h3>
+    <vuex></vuex>
   </div>
 </template>
 
 <script>
+import vuex from './vuex.vue'
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      message:'vuex'
     }
+  },
+  components:{
+    vuex
   }
 }
 </script>
