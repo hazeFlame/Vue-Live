@@ -1,30 +1,17 @@
-# live
+# 总汇直播平台
 
-> A Vue.js project
 
-## Build Setup
+## 环境（vue全家桶）
+> vue2.0 + vue-router + vuex + axios + muse-ui 
+
+### Build Setup
 
 ``` bash
-# install dependencies
+# 依赖安装
 npm install
 
-# serve with hot reload at localhost:8080
+# 启动 浏览器输入localhost:8080
 npm run dev
 
-# build for production with minification
+# 打包
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

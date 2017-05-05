@@ -1,23 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <Header_J></Header_J>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Header_J from './components/Header/Header'
 export default {
-  name: 'app'
+  name: 'app',
+  components:{
+    Header_J
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="css">
+@import "./assets/reset/reset.css"
 </style>
