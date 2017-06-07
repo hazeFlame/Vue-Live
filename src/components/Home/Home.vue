@@ -1,25 +1,36 @@
 <template lang="html">
   <section v-bind:class="[close?lefttrue:leftfalse]">
+    <h1 v-if="home">首页什么都没有</h1>
     <transition name="router-fade" mode="out-in">
       <router-view></router-view>
     </transition>
   </section>
 </template>
-
 <script>
-import { mapGetters } from 'vuex'
+import {
+  mapGetters
+} from 'vuex'
 export default {
-  name:'home',
-  data(){
+  name: 'home',
+  data() {
     return {
-      lefttrue:'lefttrue',
+      home: true,
+      lefttrue: 'lefttrue',
       leftfalse:'leftfalse'
     }
   },
+  created(){
+    this.$route.path == '/'?this.home = true:this.home = false
+  },
   computed: {
     ...mapGetters({
-      close:'closelist',
+      close: 'closelist',
     })
+  },
+  watch:{
+    $route:function(){
+      this.$route.path == '/'?this.home = true:this.home = false
+    }
   }
 }
 </script>

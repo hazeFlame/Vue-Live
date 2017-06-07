@@ -16,5 +16,4 @@ export default {
 </script>
 
 <style lang="css">
-@import "./assets/reset/reset.css"
 </style>

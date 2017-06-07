@@ -46,6 +46,9 @@
           <router-link to="/quanmin">
             <mu-list-item title="全民"/>
           </router-link>
+          <router-link to="/">
+            <mu-list-item title="回到首页"/>
+          </router-link>
         </mu-list>
       </mu-drawer>
     </section>

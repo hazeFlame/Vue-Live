@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 import MuseUI from 'muse-ui'
+import './assets/reset/reset.css'
 import 'muse-ui/dist/muse-ui.css'
 import 'muse-ui/dist/theme-carbon.css' // 使用 carbon 主题
 Vue.use(MuseUI)
